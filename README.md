@@ -8,9 +8,15 @@ hubot script that displays Short Round quotes from "Indiana Jones and the Temple
 Install
 -------
 
-- Add `hubot-shortround` to your Hubot's `package.json`
-- Add `hubot-shortround` to your Hubot's `external-scripts.json`
+In hubot project repo, run:
 
+`npm install hubot-shortround --save`
+
+Then add **hubot-shortround** to your `external-scripts.json`:
+
+```json
+["hubot-shortround"]
+```
 
 Commands
 --------
