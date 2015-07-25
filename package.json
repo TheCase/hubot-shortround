@@ -1,0 +1,22 @@
+{
+    "name": "hubot-shortround",
+    "version": "1.0.0",
+
+    "description": "Displays quotes from Short Round character in the movie 'Indiana Jones and the Temple of Doom'",
+    "keywords": [ "hubot", "hubot-scripts", "quotes", "movies" ],
+
+    "author": "Bryan Casey (http://github.com/TheCase/)",
+
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/TheCase/hubot-shortround.git"
+    },
+    "homepage": "https://github.com/TheCase/hubot-shortround",
+    "bugs": "https://github.com/TheCase/hubot-shortround/issues",
+
+    "dependencies": {
+        "coffee-script": "~1.6"
+    },
+
+    "main": "./index.coffee"
+}
