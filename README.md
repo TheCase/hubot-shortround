@@ -21,6 +21,7 @@ Then add **hubot-shortround** to your `external-scripts.json`:
 Commands
 --------
 
+`hubot shortround help` - Get help text  
 `hubot shortround me` - Get a random Short Round quote  
 `hubot shortround bomb <x>` - Get \<x\> quotes
 
