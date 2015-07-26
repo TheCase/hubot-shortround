@@ -38,7 +38,7 @@ shortrounds = [
   "That's no cookie!",
   "They crash the plane to make you come here?",
   "Three aces! I win! Two more games, I have all your money! Ha, ha, ha!",
-  "Very funny! Cery funny! ...Uh oh!",
+  "Very funny! Very funny! ...Uh oh!",
   "What is Sankara?",
   "Wow! Holy Smoke! Crash landing!",
   "You call him Doctor Jones, doll!",
