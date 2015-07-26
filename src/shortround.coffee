@@ -20,11 +20,12 @@ shortrounds = [
   "Dr. Jones! No more parachutes!",
   "Haha! Very funny! Haha! All wet!",
   "Hang on, lady. We going for a ride.",
-  "He no nuts, he's crazy!",
+  "He no nuts. He crazy!",
   "Hey! You cheat, Dr. Jones! You cheat!",
   "Hey, Dr. Jones, no time for love! We've got company!",
   "Hey, lady! You call him Dr. Jones!",
   "I keep telling you, you listen to me more, you live longer!",
+  "I step on something. Feels like I step on fortune cookies.",
   "I very little, you cheat very big!",
   "Indy!!!! Cover your heart!!!!!",
   "Indy, I love you! Wake up, Indy! Wake up!",
@@ -37,13 +38,12 @@ shortrounds = [
   "That's no cookie!",
   "They crash the plane to make you come here?",
   "Three aces! I win! Two more games, I have all your money! Ha, ha, ha!",
-  "Very funny!",
+  "Very funny! Cery funny! ...Uh oh!",
   "What is Sankara?",
-  "What’s that? Sounds like step in fortune cookie.",
   "Wow! Holy Smoke! Crash landing!",
   "You call him Doctor Jones, doll!",
   "You make me poor! No fun! Playing with you no fun!",
-  "You said to stand against the wall. Not my fault. Not my fault!"
+  "You say to stand against the wall. Not my fault. Not my fault!"
 ]
 
 module.exports = (robot) ->
