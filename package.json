@@ -1,6 +1,6 @@
 {
     "name": "hubot-shortround",
-    "version": "1.0.3",
+    "version": "1.0.4",
 
     "description": "hubot script that displays quotes from Short Round character in the movie 'Indiana Jones and the Temple of Doom'",
     "keywords": [ "hubot", "hubot-scripts", "quotes", "movies" ],

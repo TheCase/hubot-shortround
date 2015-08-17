@@ -11,6 +11,8 @@
 #   hubot shortround help - Display a random Short Round quote
 #   hubot shortround me - Display a random Short Round quote
 #   hubot shortround bomb X - Display X random Short Round quote
+#   hubot shortround selfie - Display random Short Round image
+#   hubot shortround how many - Display total number of quotes
 #
 # Author:
 #   TheCase
@@ -55,6 +57,8 @@ displays Short Round quotes from \"Indiana Jones and the Temple of Doom\"
 shortround help     - this help
 shortround me       - display one movie quote
 shortround bomb <x> - display x movie quotes, optional (default: 5)
+shortround selfie - display random google image search 
+shortround how many  - display quote count 
 """
 
   robot.respond /shortround me/i, (msg) ->
@@ -65,5 +69,34 @@ shortround bomb <x> - display x movie quotes, optional (default: 5)
     for x in [0...count] by 1
       msg.send msg.random shortrounds 
 
-  robot.respond /how many shourtrounds?/i, (msg) ->
-    msg.send "There are #{shortrounds.length} shortrounds."
+  robot.respond /shortround how many/i, (msg) ->
+    msg.send "There are #{shortrounds.length} shortround quotes."
+
+  robot.respond /shortround selfie/i, (msg) ->
+    ImageMe msg, 'Short Round', (url) ->
+      msg.send url
+
+  ImageMe = (msg, query, cb) ->
+    q = v: '1.0', rsz: '8', q: query, safe: 'active'
+    msg.http('https://ajax.googleapis.com/ajax/services/search/images')
+      .query(q)
+      .get() (err, res, body) ->
+        if err
+          msg.send "Encountered an error :( #{err}"
+          return
+        if res.statusCode isnt 200
+          msg.send "Bad HTTP response :( #{res.statusCode}"
+          return
+        images = JSON.parse(body)
+        images = images.responseData?.results
+        if images?.length > 0
+          image = msg.random images
+          cb ensureImageExtension image.unescapedUrl
+
+ensureImageExtension = (url) ->
+  ext = url.split('.').pop()
+  if /(png|jpe?g|gif)/i.test(ext)
+    url
+  else
+    "#{url}#.png"
+                   
