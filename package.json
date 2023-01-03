@@ -17,7 +17,7 @@
     "bugs": "https://github.com/TheCase/hubot-shortround/issues",
 
     "dependencies": {
-        "coffee-script": "~1.6"
+        "coffee-script": "~1.12.7"
     },
 
     "main": "./index.coffee"
